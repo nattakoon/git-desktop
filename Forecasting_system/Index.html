@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <title>Forecasting</title>
+    
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            padding: 1rem;
+            background-color: black;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .logo a{
+            font-size: 2rem;
+            color: rgb(239, 241, 244);
+            text-decoration: none;
+        }
+        .menu-container{
+            list-style: none;
+        }
+        .menu {
+            display: flex;
+            align-items: center;
+            
+        }
+        .menu li {
+            margin: 0 1rem;
+        }
+        .menu li a{
+            color: aliceblue;
+            text-decoration: none;
+        }
+        
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('../Forecasting_system/image/bg2.jpg');
+            background-size: cover;
+            flex-direction: column;
+        }
+
+
+        .container {
+            text-align: center;
+            justify-content: space-around;
+            padding: 20px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            margin-inline: 8rem;
+            color: white;
+            outline: black solid 5px;
+            font-size: 50px;
+        }
+
+        h2 {
+            margin-inline: 6rem;
+            color: wheat;
+            font-size: 40px;
+        }
+
+        /* Media query for smaller screens */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 32px;
+                margin-inline: 4rem;
+            }
+            h2 {
+                font-size: 28px;
+                margin-inline: 3rem;
+            }
+        }
+
+        /* Media query for even smaller screens */
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 26px;
+                margin-inline: 2rem;
+            }
+            h2 {
+                font-size: 24px;
+                margin-inline: 1rem;
+            }
+        }
+
+        button {
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            background-color: gainsboro;
+            color: black;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        @media  (max-width: 400px) {
+            button {
+                font-size: 16px;
+                margin-inline: 1rem;
+            }
+        }
+               
+        
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <div class="logo">
+            <a href="#">TAKE LEAVE</a>
+        </div>
+
+        <div class="menu-container"> 
+            <ul class="menu">
+            <li><a href="Index.html">หน้าหลัก</a></li>
+            <li><a href="learn.html">ความรู้ทั่วไป</a></li>
+            <li><a href="page1.html">เข้าสู่ระบบหน้าพยากรณ์</a></li>
+        </ul></div>
+             
+    </nav>
+    
+    
+        <div class="container-tm">
+        <h1>ระบบช่วยพยากรณ์จำนวนวันลาหยุดงานของพนักงานเอกชนด้วยเทคนิคดาต้าไมนิ่ง</h1>
+        <h2>Forecasting of employee leave by using data mining techniques</h2> <br>
+        <center><a href="page1.html"><button>เข้าสู่ระบบหน้าพยากรณ์</button></a></center>
+    </div>
+</body>
+</html>

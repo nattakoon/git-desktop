@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/mainstyle.css">
+    <title>Forecasting</title>
+</head>
+<body>
+     <!-- Nav Start -->
+    <nav>
+        <div class="logo">
+            <a href="#">TAKE LEAVE</a>
+        </div>
+
+        <div class="menu-container"> 
+            <ul class="menu">
+            <li><a href="Index.html">หน้าหลัก</a></li>
+            <li><a href="learn.html">ความรู้ทั่วไป</a></li>
+            <li><a href="page1.html">เข้าสู่ระบบหน้าพยากรณ์</a>
+            </li>
+        </ul></div>
+             
+    </nav>
+     <!-- Nav end -->
+
+    <div class='container'>
+        <div class="image-container"> 
+           <h3 class="text">ระบบช่วยพยากรณ์จำนวนวันลาหยุดงานของพนักงานเอกชนด้วยเทคนิคดาต้าไมนิ่ง</h3>
+           <h3 class="text">Forecasting of employee leave by using data mining techniques</h3>
+        </div>
+    </body><br><br>
+<div class="homepage">
+    <form action="rule.php" method="get" >
+      <div class='text-container'>&nbsp;
+        <p><font size=4 > &nbsp;&nbsp;&nbsp;กรุณาเลือกคำตอบ</font></p><br>
+           <ul>
+               <li>
+                   <div class="row">
+                       <div class="form-row">
+                       <h4> 1. อายุ </h4><br>
+                       <input type="text"  id="age" name="t1" required>
+                       </div>
+
+                    <div class="form-row">
+                        <h4> 2. ประสบการณ์ทำงาน</h4>
+                       <select class="form-main"  name="t2" id="experience" >
+                        <option value=""> - กรุณาเลือกคำตอบ - </option>
+                        <option value="1"> ต่ำกว่า 1 ปี </option><br>
+                        <option value="2"> 1-5 ปี</option> <br>
+                        <option value="3"> 6-10 ปี </option><br>
+                        <option value="4"> 10 ปีขึ้นไป </option><br>
+     
+                       </select>
+                    </div>
+
+                    <div class="form-row">
+                        <h4>3. ระดับวุฒิการศึกษา</h4> 
+                        <select class="form-main"  name="t3" id="qualification" >
+                            <option value=""> - กรุณาเลือกคำตอบ - </option>
+                            <option value="1"> มัธยม </option>
+                            <option value="2"> ปวช./ปวส </option>
+                            <option value="3"> ปริญญาตรี </option>
+                            <option value="4"> สูงกว่าปริญญาตรี </option>
+                        </select> 
+                    </div>
+
+                    <div class="form-row">
+                        <h4>4. คุณมีความต้องการลาพักร้อนกี่วันต่อปี</h4> 
+                        <select class="form-main"  name="t4" id="vacation" >
+                            <option value=""> - กรุณาเลือกคำตอบ - </option>
+                            <option value="1"> 6 วัน </option>
+                            <option value="2"> 9 วัน </option>
+                            <option value="3"> 12 วัน </option>
+                            <option value="4"> 15 วัน </option>
+                            <option value="5"> >15 วัน </option>
+                        </select>  
+                    </div>
+
+                    <div class="form-row">
+                        <h4>5. คุณมีความต้องการลากิจส่วนตัวกี่วันต่อปี</h4> 
+                        <select class="form-main"  name="t5" id="personal" >
+                            <option value=""> - กรุณาเลือกคำตอบ - </option>
+                            <option value="1"> 3 วัน </option>
+                            <option value="2"> 7 วัน </option>
+                            <option value="3"> 11 วัน </option>
+                            <option value="4"> 15 วัน </option>
+                            <option value="5"> >15 วัน </option>
+                        </select>
+                    </div>
+
+                    <div class="form-row">
+                       <h4>6. คุณมีความต้องการลาป่วยกี่วันต่อปี</h4>
+                       <select class="form-main"  name="t6" id="sick" >
+                        <option value=""> - กรุณาเลือกคำตอบ - </option>
+                        <option value="1"> 3 วัน </option>
+                        <option value="2"> 12 วัน </option>
+                        <option value="3"> 21 วัน </option>
+                        <option value="4"> 30 วัน </option>
+                        <option value="5"> >30 วัน </option>
+                    </select>
+                    </div>
+
+                    <div class="form-row">
+                        <h4>7. คุณเคยลากี่ครั้งในช่วงเวลา 1 ปี</h4>
+                        <select class="form-main"  name="t7" id="timedo" >
+                            <option value=""> - กรุณาเลือกคำตอบ - </option>
+                            <option value="1"> 1-3 ครั้ง </option>
+                            <option value="2"> 4-6 ครั้ง </option>
+                            <option value="3"> 7-12 ครั้ง </option>
+                            <option value="4"> มากกว่า 12 ครั้ง </option>   
+                        </select>
+                    </div>
+                
+                    <div class="form-row">
+                        <h4>8. คุณมีบุตรหรือไม่</h4>
+                        <select class="form-main"  name="t8" id="children" >
+                            <option value=""> - กรุณาเลือกคำตอบ -</option>
+                            <option value="1"> ไม่มี </option>
+                            <option value="2"> มี</option>
+                        </select>
+
+                    </div>
+                    <div class="form-row">
+                        <h4>9. คุณใช้เวลาในการเดินทางกี่นาที</h4>
+                        <select class="form-main"  name="t9" id="minutes" >
+                            <option value=""> - กรุณาเลือกคำตอบ -</option>
+                            <option value="1"> น้อยกว่า 30 นาที </option>
+                            <option value="2"> 30 นาที </option>
+                            <option value="3"> มากกว่า 30 นาที </option>
+                        </select>
+                    </div>
+
+                    <div class="form-row">
+                        <h4>10. คุณมีความสุขกับการทำงานหรือไม่</h4>
+                        <select class="form-main"  name="t10" id="pleasure" >
+                            <option value="" > - กรุณาเลือกคำตอบ -</option>
+                            <option value="1"> น้อยที่สุด </option>
+                            <option value="2"> น้อย </option>
+                            <option value="3"> ปานกลาง </option>
+                            <option value="4"> มาก </option>
+                            <option value="5"> มากที่สุด </option>
+                        </select>
+                    </div>
+
+                    <div class="form-row">
+                        <h4>11. คุณเป็นคนทุ่มเทกับการทำงานหรือไม่</h4>
+                        <select class="form-main"  name="t11" id="dedicated" >
+                            <option value=""> - กรุณาเลือกคำตอบ -</option>
+                            <option value="1"> น้อยที่สุด </option>
+                            <option value="2"> น้อย </option>
+                            <option value="3"> ปานกลาง </option>
+                            <option value="4"> มาก </option>
+                            <option value="5"> มากที่สุด </option>
+                        </select>
+                    </div>
+
+                    <div class="form-row">
+                        <h4>12. คุณมีสุขภาพร่างกายแข็งแรงหรือไม่</h4>
+                        <select class="form-main" name="t12" id="health" >
+                            <option value=""> - กรุณาเลือกคำตอบ -</option>
+                            <option value="1"> น้อยที่สุด </option>
+                            <option value="2"> น้อย </option>
+                            <option value="3"> ปานกลาง </option>
+                            <option value="4"> มาก </option>
+                            <option value="5"> มากที่สุด </option>
+                        </select>
+                    </div>
+
+                    <div class="form-row margin-bottom-0">
+                        <h4>13. คุณไปพบเพื่อนหรือญาติบ่อยไหม</h4>
+                        <select class="form-main"  name="t13" id="friend" >
+                            <option value=""> - กรุณาเลือกคำตอบ -</option>
+                            <option value="1"> น้อยที่สุด </option>
+                            <option value="2"> น้อย </option>
+                            <option value="3"> ปานกลาง </option>
+                            <option value="4"> มาก </option>
+                            <option value="5"> มากที่สุด </option>
+                        </select>
+                    </div>
+                </form>
+
+                   </div> <br> 
+                   <div class="button" >
+                   <center><input type="button" value="ย้อนกลับ" id="click-back" onclick="location.href = 'Index.html';">
+                    <button type="submit" id="submit-button" onclick="return empform()">พยากรณ์</button>
+                    </center><br>
+                   </div>
+                   
+               </li>
+           </ul>
+       </div>
+   </div>
+   <script>
+    function empform() {
+        var num = 0;
+         
+        if (age.value == "" || experience.value == "" || qualification.value == "" || vacation.value == "" || personal.value == "" || sick.value == "" || timedo.value == "" || children.value == "" || minutes.value == "" || pleasure.value == "" || dedicated.value == "" || health.value == "" || friend.value == ""){
+            alert("กรุณากรอกข้อมูลให้ครบ");
+            return false;
+        }else{
+            window.location.href = 'rule.php?t1='+age.value+'&t2='+experience.value+'&t3='+qualification.value+'&t4='+vacation.value+'&t5='+personal.value+'&t6='+sick.value+'&t7='+timedo.value+'&t8='+children.value+'&t9='+minutes.value+'&t10='+pleasure.value+'&t11='+dedicated.value+'&t12='+health.value+'&t13='+friend.value;
+        }
+    }
+</script>
+
+
+</body>
+</html>
